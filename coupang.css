@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input {
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,6 +28,9 @@ time, mark, audio, video, input {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+html {
+	font-size: 10px;
 }
 body {
 	line-height: 1;
@@ -51,7 +54,7 @@ table {
  /*header*/
 
 .header__inner {
-	margin: 0 20rem;
+	margin: 0 32rem;
 }
 
 .top-bar {
@@ -64,7 +67,8 @@ table {
 	text-decoration: none;
 	color: black;
 	padding: 1rem;
-	line-height: 2.4rem;
+	line-height: 4rem;
+	font-size: 1.4rem;
 	border-top: 1px solid black;
 }
 
@@ -74,7 +78,6 @@ table {
 
 #header {
 	display: flex;
-	justify-content: space-between;
 }
 
 .header__right {
@@ -82,34 +85,38 @@ table {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	flex-grow: 1;
 }
  
 .header__rignt-top, .right-bottom__list  {
 	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .btn__items {
 	border: none;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	background: none;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 }
 
 .btn__items i {
 	display: flex;
 	justify-content: center;
-	font-size: 2.4rem;
+	font-size: 4.2rem;
+	padding: 0 0 1rem 0;
 }
 
 .category {
 	background-color: #2582fc;
-	width: 11rem;
-	height: 11.5rem;
+	width: 14rem;
+	height: 15rem;
 }
 
 .header__logo .logo img {
-	width: 17.4rem;
-	padding: 0 1rem;
+	width: 24rem;
+	padding: 0 3rem;
 }
 
 .header__search {
@@ -123,8 +130,12 @@ table {
 	padding: 0 1rem;
 	border: 4px solid #2582fc;
 	box-sizing: content-box;
-	width: 3rem;
-	height: 3.8rem;
+	width: 14rem;
+	height: 4rem;
+}
+
+.search__left i {
+	font-size: 2rem;
 }
 
 .search__right {
@@ -133,9 +144,14 @@ table {
 	border: 4px solid #2582fc;
 	padding-left: 1rem;
 	box-sizing: content-box;
-	width: 33rem;
-	height: 3.8rem;
+	width: 50rem;
+	height: 4rem;
 } 
+
+.search__right i {
+	font-size: 2.4rem;
+	padding-left: 2rem;
+}
 
 .right__items {
 	margin-left: auto;
@@ -151,9 +167,16 @@ table {
 	text-decoration: none;
 	color: black;
 	padding: 0 1.4rem;
+	font-size: 1.6rem;
 }
 
 #carousel img {
 	width: 100%;
 	height: auto;
+}
+
+/*section today discovery*/
+
+#today-discovery title h1 {	
+	display: inline-block;
 }
